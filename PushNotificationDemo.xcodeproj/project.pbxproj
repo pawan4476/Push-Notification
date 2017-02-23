@@ -13,6 +13,11 @@
 		52419CEE1E5C1DBA00F80A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52419CEC1E5C1DBA00F80A49 /* Main.storyboard */; };
 		52419CF01E5C1DBA00F80A49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52419CEF1E5C1DBA00F80A49 /* Assets.xcassets */; };
 		52419CF31E5C1DBA00F80A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52419CF11E5C1DBA00F80A49 /* LaunchScreen.storyboard */; };
+		52419CFC1E5C2A6E00F80A49 /* Pushbots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52419CFB1E5C2A6E00F80A49 /* Pushbots.framework */; };
+		52419CFF1E5C2A9100F80A49 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52419CFE1E5C2A9100F80A49 /* CoreTelephony.framework */; };
+		52419D011E5C2AA300F80A49 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52419D001E5C2AA300F80A49 /* SystemConfiguration.framework */; };
+		52419D031E5C2AB100F80A49 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52419D021E5C2AB100F80A49 /* MobileCoreServices.framework */; };
+		52419D051E5C2AC400F80A49 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52419D041E5C2AC400F80A49 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		52419CEF1E5C1DBA00F80A49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52419CF21E5C1DBA00F80A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52419CF41E5C1DBA00F80A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52419CFA1E5C21C600F80A49 /* PushNotificationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotificationDemo.entitlements; sourceTree = "<group>"; };
+		52419CFB1E5C2A6E00F80A49 /* Pushbots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushbots.framework; sourceTree = "<group>"; };
+		52419CFE1E5C2A9100F80A49 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		52419D001E5C2AA300F80A49 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		52419D021E5C2AB100F80A49 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		52419D041E5C2AC400F80A49 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52419D051E5C2AC400F80A49 /* CoreLocation.framework in Frameworks */,
+				52419D031E5C2AB100F80A49 /* MobileCoreServices.framework in Frameworks */,
+				52419D011E5C2AA300F80A49 /* SystemConfiguration.framework in Frameworks */,
+				52419CFF1E5C2A9100F80A49 /* CoreTelephony.framework in Frameworks */,
+				52419CFC1E5C2A6E00F80A49 /* Pushbots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +60,7 @@
 			children = (
 				52419CE21E5C1DB900F80A49 /* PushNotificationDemo */,
 				52419CE11E5C1DB900F80A49 /* Products */,
+				52419CFD1E5C2A9100F80A49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +75,7 @@
 		52419CE21E5C1DB900F80A49 /* PushNotificationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				52419CFA1E5C21C600F80A49 /* PushNotificationDemo.entitlements */,
 				52419CE61E5C1DB900F80A49 /* AppDelegate.h */,
 				52419CE71E5C1DB900F80A49 /* AppDelegate.m */,
 				52419CE91E5C1DB900F80A49 /* ViewController.h */,
@@ -66,6 +84,7 @@
 				52419CEF1E5C1DBA00F80A49 /* Assets.xcassets */,
 				52419CF11E5C1DBA00F80A49 /* LaunchScreen.storyboard */,
 				52419CF41E5C1DBA00F80A49 /* Info.plist */,
+				52419CFB1E5C2A6E00F80A49 /* Pushbots.framework */,
 				52419CE31E5C1DB900F80A49 /* Supporting Files */,
 			);
 			path = PushNotificationDemo;
@@ -77,6 +96,17 @@
 				52419CE41E5C1DB900F80A49 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52419CFD1E5C2A9100F80A49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52419D041E5C2AC400F80A49 /* CoreLocation.framework */,
+				52419D021E5C2AB100F80A49 /* MobileCoreServices.framework */,
+				52419D001E5C2AA300F80A49 /* SystemConfiguration.framework */,
+				52419CFE1E5C2A9100F80A49 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +140,19 @@
 				TargetAttributes = {
 					52419CDF1E5C1DB900F80A49 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4WXHX2LK83;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -272,10 +314,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushNotificationDemo/PushNotificationDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Umesh venkatesh (6N4PX2W7JY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4WXHX2LK83;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PushNotificationDemo",
+				);
 				INFOPLIST_FILE = PushNotificationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meheboob.PushNotificationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -283,10 +334,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushNotificationDemo/PushNotificationDemo.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4WXHX2LK83;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PushNotificationDemo",
+				);
 				INFOPLIST_FILE = PushNotificationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meheboob.PushNotificationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
